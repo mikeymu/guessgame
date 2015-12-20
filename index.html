@@ -44,19 +44,19 @@
           <div class="col-lg-6">
             <div class="input-group input-group-lg">
               <span class="input-group-btn input-group-lg ">
-                <button class="btn btn-success" type="button">Submit!</button>
+                <button id="submitBtn" class="btn btn-success" type="button">Submit!</button>
               </span>
-              <input type="text" class="form-control" placeholder="Guess Between 1-100...">
+              <input id="guess" type="text" class="form-control" placeholder="Guess Between 1-100...">
             </div>
           </div>
 
-          <p id="hotOrCold" >This is where jquery will say whether you are hot or cold</p>
-          <p id="numGuess" >This is where jquery will say the number of guesses left </p>
+          <h4 id="hotOrCold" >Take your best shot. I'll tell you if you are getting warmer.</h4>
+          <h4 id="numGuess" >You have 5 guesses left! </h4>
 
 
           <p class="btn-group">
-            <a class="btn btn-info btn-lg" href="#">Give Me A Hint</a>
-            <a class="btn btn-danger btn-lg" href="#">Restart Game</a>
+            <button id="hint" class="btn btn-info btn-lg" href="#">Give Me A Hint</button>
+            <button id="restart" class="btn btn-danger btn-lg" href="#">Restart Game</button>
           </p>           
       </div>
     </div> 
@@ -66,34 +66,34 @@
     <div id="past" class="container im-centered wrap">
       <h3>Past Guesses</h3>
 
-      <div class="row">
+      <div id="guesslist" class="row">
         <div class="col-sm-1 col-sm-offset-3">
           <h5>Record: </h5>
         </div>
 
-        <div id="guess1" class="col-sm-1">
-          <b class="glyphicon glyphicon-remove "></b>
-          <p id="guess1num">34</p>
+        <div id="guess5" class="col-sm-1">
+          <b class="glyphicon glyphicon-minus "></b>
+          <p></p>
         </div>
 
-        <div id="guess2" class="col-sm-1">
-          <b class="glyphicon glyphicon-ok "></b>
-          <p id="guess2num">50</p>
+        <div id="guess4" class="col-sm-1">
+          <b class="glyphicon glyphicon-minus "></b>
+          <p></p>
         </div>
 
         <div id="guess3" class="col-sm-1">
           <b class="glyphicon glyphicon-minus"></b>
-          <p id="guess3num">60</p>
+          <p></p>
         </div>
 
-        <div id="guess4" class="col-sm-1">
+        <div id="guess2" class="col-sm-1">
           <b class="glyphicon glyphicon-minus"></b>
-          <p id="guess4num">60</p>
+          <p ></p>
         </div>
 
-        <div id="guess5" class="col-sm-1">
+        <div id="guess1" class="col-sm-1">
           <b class="glyphicon glyphicon-minus"></b>
-          <p id="guess5num">60</p>
+          <p ></p>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/my-js.js"></script>
+    <script src="js/guessingGame.js"></script>
 
   </body>
 </html>
