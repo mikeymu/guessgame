@@ -73,11 +73,11 @@ function lowerOrHigher(){
   } 
   
   else if (difference > 25)  {
-    $( "#hotOrCold" ).text("A little closer.");
+    $( "#hotOrCold" ).text("Pretty close.");
   }
 
   else if (difference > 10) {
-    $( "#hotOrCold" ).text("Oooh, you are getting close.");
+    $( "#hotOrCold" ).text("Oooh, you are getting really close.");
   }
 
   else if (difference > 1) {
