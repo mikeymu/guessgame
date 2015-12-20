@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mikey's Guessing Game | Fullstack Foundations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-muted" href="#">Mikey Guessing Game</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="http://mikeymu.tumblr.com/">Mikey's Blog</a></li>
+            <li><a href="http://www.fullstackacademy.com">Fullstack Academy</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div><!-- End navbar -->
+
+
+    <!-- Main content-->
+    <div class="jumbotron">
+      <div class="container">
+          <h1>Guessing Game!</h1>
+          <p class="lead">You have five tries to guess a number 1-100!</p>
+
+          <div class="col-lg-6">
+            <div class="input-group input-group-lg">
+              <span class="input-group-btn input-group-lg ">
+                <button class="btn btn-success" type="button">Submit!</button>
+              </span>
+              <input type="text" class="form-control" placeholder="Guess Between 1-100...">
+            </div>
+          </div>
+
+          <p id="hotOrCold" >This is where jquery will say whether you are hot or cold</p>
+          <p id="numGuess" >This is where jquery will say the number of guesses left </p>
+
+
+          <p class="btn-group">
+            <a class="btn btn-info btn-lg" href="#">Give Me A Hint</a>
+            <a class="btn btn-danger btn-lg" href="#">Restart Game</a>
+          </p>           
+      </div>
+    </div> 
+
+
+
+    <div id="past" class="container im-centered wrap">
+      <h3>Past Guesses</h3>
+
+      <div class="row">
+        <div class="col-sm-1 col-sm-offset-3">
+          <h5>Record: </h5>
+        </div>
+
+        <div id="guess1" class="col-sm-1">
+          <b class="glyphicon glyphicon-remove "></b>
+          <p id="guess1num">34</p>
+        </div>
+
+        <div id="guess2" class="col-sm-1">
+          <b class="glyphicon glyphicon-ok "></b>
+          <p id="guess2num">50</p>
+        </div>
+
+        <div id="guess3" class="col-sm-1">
+          <b class="glyphicon glyphicon-minus"></b>
+          <p id="guess3num">60</p>
+        </div>
+
+        <div id="guess4" class="col-sm-1">
+          <b class="glyphicon glyphicon-minus"></b>
+          <p id="guess4num">60</p>
+        </div>
+
+        <div id="guess5" class="col-sm-1">
+          <b class="glyphicon glyphicon-minus"></b>
+          <p id="guess5num">60</p>
+        </div>
+      </div>
+    </div>
+
+
+
+      <!-- End main content-->
+        <div id="push"></div>
+
+          <hr>
+
+        <div id="footer">
+          <div class="container">
+            <p class="muted credit">&copy; 2015 <a href="http://mikeymu.com">Mikey Mu</a>  Guessing Game</p>
+          </div>
+        </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my-js.js"></script>
+
+  </body>
+</html>
