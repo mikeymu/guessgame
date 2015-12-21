@@ -125,6 +125,7 @@ function playAgain(){
   $("#guesslist").children("div").children("p").text("")
   $("#hint").prop('disabled', false) 
   $("#submitBtn").prop('disabled', false)
+  generateWinningNumber()
 
 }
 
