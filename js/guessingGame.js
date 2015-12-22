@@ -1,6 +1,8 @@
 /* **** Global Variables **** */
 // try to elminate these global variables in your project, these are here just to start.
 
+
+
 var playersGuess,
     winningNumber = generateWinningNumber(),
     numGuess = 5,
@@ -13,10 +15,14 @@ var playersGuess,
 
 // Generate the Winning Number
 
+
+
 function generateWinningNumber(){
   // add code here
 
-
+ // Question: You are assigning the winning number variable here, but at the top of your code where you have a list
+ // of global variables, you are also assigning winningNumber's value.
+ 
   winningNumber = Math.floor((Math.random() * 100) + 1);
   return winningNumber
 }
@@ -55,6 +61,7 @@ function numGuessLeft() {
     $( "#hotOrCold" ).text(string);
   }
     ;
+    // is this an event handler here?
 $('button')
 
 
@@ -65,6 +72,13 @@ $('button')
 
 // Determine if the next guess should be a lower or higher number
 
+// I noticed you are using a lot of global variables in your code, which is okay for now.
+// The one habit oget into is if you use values inside of your function that you need some place outside of them
+// such as the global scope or anothers function scoep, when you define the function, define the function 
+// to accept paramters, ex:
+
+// function lowerOrHigher(playerGuess, winningNumber){};  This is a good habit to get into since you won't always
+// be able to rely on global variables (for now it's okay!)
 function lowerOrHigher(){
   difference = Math.abs(playersGuess - winningNumber)
   
