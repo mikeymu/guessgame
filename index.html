@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mikey's Guessing Game</title>
+    <title>And Another One</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -15,105 +15,134 @@
   <body>
 
     <!-- Navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand text-muted" href="#">Mikey Guessing Game</a>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://mikeymu.tumblr.com/">Mikey's Blog</a></li>
-            <li><a href="http://www.mikeymu.com">Personal Site</a></li>
+    <div class="navbar navbar-fixed-top">
+          <a class="navbar-brand" href="#">
+            <img id="navbaricon" alt="Brand" src="img/pauldano.png"> And Another One...
+          </a>
 
-          </ul>
-        </div>
-      </div>
-    </div><!-- End navbar -->
+
+          <div class="btn-group navbar-brand pull-right" data-toggle="buttons">
+            <label id="paulDano" class="btn btn-primary active">
+              <input type="checkbox" checked> Paul Dano
+            </label>
+            <label id="djKhalid" class="btn btn-default active">
+              <input type="checkbox"> DJ Khalid
+            </label>
+          </div>
+     </div> 
+    <!-- End navbar -->
 
 
     <!-- Main content-->
-    <div class="jumbotron">
+    <div >
       <div class="container">
-          <h1>Guessing Game!</h1>
-          <p class="lead">You have five tries to guess a number 1-100!</p>
+        <div class="jumbotron">  
 
-          <div class="col-lg-6">
             <div class="input-group input-group-lg">
               <span class="input-group-btn input-group-lg ">
-                <button id="submitBtn" class="btn btn-success" type="button">Submit!</button>
+                <button id="submitBtn" class="btn btn-main" type="button">another one?</button>
               </span>
-              <input id="guess" type="text" class="form-control" placeholder="Guess Between 1-100...">
-            </div>
-          </div>
+<!--               <input id="guess" type="text" class="form-control" placeholder="Guess Between 1-100...">
+ -->            </div>
+
 
           <h4 id="hotOrCold" >Take your best shot. I'll tell you if you are getting warmer.</h4>
           <h4 id="numGuess" >You have 5 guesses left! </h4>
 
-
-          <p class="btn-group">
-            <button id="hint" class="btn btn-info btn-lg" href="#">Give Me A Hint</button>
-            <button id="restart" class="btn btn-danger btn-lg" href="#">Restart Game</button>
-          </p>           
+         
+        </div>
       </div>
     </div> 
 
+<!-- <ul id="streak">
+  <li>
+    <b class="glyphicon">&#9746;</b>
+  </li>
+  <li>
+    <b class="glyphicon">&#9746;</b>
+  </li>
+  <li>
+    <b class="glyphicon">&#9746;</b>
+  </li>
+  <li>
+    <div class="xy">&#9746;</div>
+  </li>
+  <li>
+    <div>X</div>
+  </li>
+  <li>
+    <div>X</div>
+  </li>
+
+</ul>
+ -->
 
 
-    <div id="past" class="container im-centered wrap">
-      <h3>Past Guesses</h3>
 
-      <div id="guesslist" class="row">
-        <div class="col-sm-1 col-sm-offset-3">
-          <h5>Record: </h5>
-        </div>
+<!-- 
+<div id="streak2">
+<p class="boxes">
+<span class="xy">&#9744;</span>
+</p>  
 
-        <div id="guess5" class="col-sm-1">
-          <b class="glyphicon glyphicon-minus "></b>
-          <p></p>
-        </div>
 
-        <div id="guess4" class="col-sm-1">
-          <b class="glyphicon glyphicon-minus "></b>
-          <p></p>
-        </div>
+</div>
+ -->
 
-        <div id="guess3" class="col-sm-1">
-          <b class="glyphicon glyphicon-minus"></b>
-          <p></p>
-        </div>
+<div class="streak container">
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+<!--   <div style="clear:both"></div> -->
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+    <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+    <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+    <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/checkBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
+  <div><img class="boxes" src="img/emptyBox.png"></div>
 
-        <div id="guess2" class="col-sm-1">
-          <b class="glyphicon glyphicon-minus"></b>
-          <p ></p>
-        </div>
-
-        <div id="guess1" class="col-sm-1">
-          <b class="glyphicon glyphicon-minus"></b>
-          <p ></p>
-        </div>
-      </div>
-    </div>
+</div>
 
 
 
       <!-- End main content-->
-        <div id="push"></div>
 
-          <hr>
 
-        <div id="footer">
-          <div class="container">
-            <p class="muted credit">&copy; 2015 <a href="http://mikeymu.com">Mikey Mu</a>  Guessing Game</p>
-          </div>
-        </div>
+
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/guessingGame.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
+
+
+
+  

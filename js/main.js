@@ -148,11 +148,31 @@ function glyphs() {
 
 
 
+
+function paulDano_select() {
+  var image = $("#navbaricon")[0]
+  image.src = "img/pauldano.png";
+  console.log("paul dano");
+}
+
+function djKhalid_select() {
+  var image = $("#navbaricon")[0]
+  image.src ="img/djkhalid.png";
+  console.log("dj khalid");
+  console.log(image)
+}
+
+
+
+
+
 /* **** Event Listeners/Handlers ****  */
  $("#submitBtn").click( playersGuessSubmission );
  $("#hint").click( provideHint );
  $("#restart").click( playAgain );
 
 
+$("#paulDano").click( paulDano_select );
+$("#djKhalid").click( djKhalid_select );
 
 

@@ -1,0 +1,108 @@
+
+/* Nav Bar
+================================ */
+#navbaricon {
+    border-radius: 50%;
+    height: 40px;
+}
+
+/*.navbar .btn {
+  background-color: red;
+  color: white;
+  border-color: #CCCCCC;
+  background-image: red;
+
+
+}
+
+
+.btn-primary:active, .btn-primary.active {
+  background-color: #428bca;
+  color: white;
+  border-color: #CCCCCC;
+
+}*/
+
+
+
+
+
+
+
+/* Layout
+================================ */
+
+body {
+	padding-top: 50px;
+}
+.container {
+	max-width: 1000px;
+}
+
+/* Jumbotron
+================================ */
+
+.jumbotron {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+/* Glyphicons
+================================ */
+
+.glyphicon {
+	font-size: 3em;
+	display: inline;
+	text-align: center;
+	color: #5bc0de;
+  border-color: #46b8da;
+}
+
+
+
+.glyphicon-remove {
+  color: black;
+  border-color: #black;
+}
+
+
+.btn-main {
+  color: white;
+  background-color: black;
+  border-color: #black;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active,
+.btn-main.active,
+.open .dropdown-toggle.btn-main {
+  color: white;
+  background-color: #3E3E3E;
+  border-color: #3E3E3E;
+}
+
+
+.xy {
+  font-size: 40px;
+  display: inline;
+  text-align: center;
+  color: black;
+  border-color: black;
+}
+
+.streak img {
+  float:left; 
+  width:50 px;
+
+}
+
+.streak .boxes {
+  width:100px;
+}
+
+#paulDano  {
+  background-color: black;
+
+}
